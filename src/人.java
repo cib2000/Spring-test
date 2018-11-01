@@ -1,5 +1,15 @@
 public class 人 {
-    public void 说话() {
-    System.out.println("我是人.");
+    public String get姓名() {
+        return 姓名;
+    }
+
+    public void set姓名(String 姓名) {
+        this.姓名 = 姓名;
+    }
+
+    String 姓名;
+
+    public void 自我介绍() {
+    System.out.println("我是"+姓名);
     }
 }
