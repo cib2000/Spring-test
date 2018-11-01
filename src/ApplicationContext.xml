@@ -2,8 +2,10 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean class="人" id="Person">
-        <property name="姓名" value="梅梅"></property>
+    <bean class="Source" id="source">
+        <property name="fruit" value="Apple"></property>
+        <property name="sugar"               value="cube"></property>
+        <property name="size" value="large"></property>
     </bean>
 
 </beans>
