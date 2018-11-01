@@ -15,5 +15,8 @@ public class Test {
         Source source2=(Source)applicationContext.getBean("source");
         source2.out();
 
+        Juice juice=(Juice)applicationContext.getBean("juice");
+        juice.out();
+
     }
 }

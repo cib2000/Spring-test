@@ -2,10 +2,13 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean class="Source" id="source">
+    <bean id="source" class="Source">
         <property name="fruit" value="Apple"></property>
         <property name="sugar"               value="cube"></property>
         <property name="size" value="large"></property>
+    </bean>
+    <bean id="juice" class="Juice">
+        <property name="psource" ref="source"></property>
     </bean>
 
 </beans>
